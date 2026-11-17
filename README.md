@@ -60,12 +60,16 @@ tangkapan layar terminal yang menampilkan input dan struk. Hasilnya total
 Rp115.000, diskon Rp11.500, dan jumlah bayar Rp103.500. Simpan sebagai
 `screenshots/pesanan-valid.png`.
 
+![Struk untuk pesanan valid](screenshots/pesanan-valid.png)
+
 ### Pesanan dengan kode dan jumlah tidak valid
 
 Jalankan program lagi dengan input
 `P01x2, P99x1, P03xabc, P04x0`. Struk harus tetap tercetak; `P99` dan jumlah
 `abc`/`0` dicatat sebagai item ditolak. Simpan tangkapan layar terminal sebagai
 `screenshots/pesanan-tidak-valid.png`.
+
+![Struk dengan item yang ditolak](screenshots/pesanan-tidak-valid.png)
 
 **Sebelum dikumpulkan:** tambahkan kedua berkas gambar di atas ke repository dan
 tampilkan di README dengan tautan gambar relatif.

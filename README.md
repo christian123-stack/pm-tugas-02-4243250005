@@ -85,7 +85,7 @@ Buat repository publik bernama `pm-tugas-02-4243250005`. Setelah repository
 kosong dibuat, hubungkan dan unggah:
 
 ```powershell
-git remote add origin https://github.com/<USERNAME>/pm-tugas-02-4243250005.git
+git remote add origin https://github.com/christian123-stack/pm-tugas-02-4243250005.git
 git push -u origin main
 ```
 

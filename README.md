@@ -55,24 +55,23 @@ tidak valid tidak menyebabkan program crash. Operator `!` tidak digunakan.
 
 ### Pesanan valid
 
-Jalankan `dart run bin/kasir.dart`, masukkan `P01x2, P03x1`, lalu ambil
-tangkapan layar terminal yang menampilkan input dan struk. Hasilnya total
-Rp115.000, diskon Rp11.500, dan jumlah bayar Rp103.500. Simpan sebagai
-`screenshots/pesanan-valid.png`.
+Input `P01x2, P03x1` menghasilkan total Rp115.000, diskon Rp11.500, dan jumlah
+bayar Rp103.500.
 
 ![Struk untuk pesanan valid](screenshots/pesanan-valid.png)
 
-### Pesanan dengan kode dan jumlah tidak valid
+### Pesanan dengan format tidak valid
 
-Jalankan program lagi dengan input
-`P01x2, P99x1, P03xabc, P04x0`. Struk harus tetap tercetak; `P99` dan jumlah
-`abc`/`0` dicatat sebagai item ditolak. Simpan tangkapan layar terminal sebagai
-`screenshots/pesanan-tidak-valid.png`.
+Input `P222, P333` ditolak karena tidak mengikuti format `KODExJUMLAH`.
+Program tetap mencetak struk dan memberi keterangan kesalahan tanpa crash.
 
 ![Struk dengan item yang ditolak](screenshots/pesanan-tidak-valid.png)
 
-**Sebelum dikumpulkan:** tambahkan kedua berkas gambar di atas ke repository dan
-tampilkan di README dengan tautan gambar relatif.
+### Validasi kode
+
+Perintah `dart analyze` selesai dengan hasil `No issues found!`.
+
+![Hasil dart analyze](screenshots/validasi-analyze.png)
 
 ## Penggunaan AI
 
